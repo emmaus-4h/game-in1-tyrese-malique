@@ -1,6 +1,6 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Mijn spel: *naam van het spel*
+## Mijn spel: *hendriksl*
 Gemaakt door:
 - *Tyrese Wezer*
 - *Malique Necebet*
@@ -9,9 +9,10 @@ Gemaakt door:
 
 Basis: uitleg, spelen, afgaan en punten
 - [x] maak index.html, style.css en script.js met canvas
-- [ ] teken speler (26 maart 2021)
+- [x] teken basketball ( 2021)
+- [x] teken speler
 - [ ] beweeg speler (26 maart 2021)
-- [ ] ... *(vul zelf aan)*
+- [x ] teken ball(vul zelf aan)*
 - [ ] punten op scherm zetten
 - [ ] punten kunnen scoren
 - [ ] uitlegscherm
