@@ -11,8 +11,9 @@ Basis: uitleg, spelen, afgaan en punten
 - [x] maak index.html, style.css en script.js met canvas
 - [x] teken basketball ( 2021)
 - [x] teken speler
-- [ ] beweeg speler (26 maart 2021)
-- [x ] teken ball(vul zelf aan)*
+- [x] beweeg ball (26 maart 2021)
+- [ ] ball zelf laten schieten
+- [x] teken ball(vul zelf aan)*
 - [ ] punten op scherm zetten
 - [ ] punten kunnen scoren
 - [ ] uitlegscherm

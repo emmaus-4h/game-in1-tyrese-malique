@@ -59,11 +59,10 @@ var tekenVeld = function () {
 var tekenVijand = function(x, y) {
   fill("black")
     rect(x, y, 10, 150)
-fill("orange")
+  fill("orange")
     rect(1150, 240, 100, 10)
 
 };
-
 
 /**
  * Tekent de kogel of de bal
@@ -72,9 +71,8 @@ fill("orange")
  */
 var tekenKogel = function(x, y) {
 fill("orange")
-ellipse(mouseX, mouseY, 50, 50)
+ellipse(x, y, 50, 50)
 };
-
 
 /**
  * Tekent de speler
@@ -101,8 +99,38 @@ var beweegVijand = function() {
  * Updatet globale variabelen met positie van kogel of bal
  */
 var beweegKogel = function() {
+if (keyIsDown(65)) {
+    kogelX = kogelX - 5;
+  }
+  if (keyIsDown(68)) {
+    kogelX = kogelX + 5;
+    }
+    if (keyIsDown(87)) {
+    kogelY = kogelY - 5;
+    }
+  
+  if (keyIsDown(83)) {
+    kogelY = kogelY + 5;
+  }
 
+ if (kogelX < 50) {
+      kogelX = 50;}
+    
+    if (kogelY < 50) {
+      kogelY = 50;
+
+    } 
+    if (kogelX > 1230) {
+      kogelX = 1230;}
+    
+    if (kogelY > 670) {
+      kogelY = 670;
+
+    }
 };
+ // position of the ball
+
+// how far the ball moves every time
 
 
 /**
@@ -168,7 +196,9 @@ function draw() {
   switch (spelStatus) {
     case SPELEN:
       beweegVijand();
+      
       beweegKogel();
+    
       beweegSpeler();
       
       if (checkVijandGeraakt()) {
